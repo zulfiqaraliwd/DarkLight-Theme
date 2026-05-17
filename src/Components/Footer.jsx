@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Footer.css"
+import { contextTheme } from '../App';
 function Footer() {
+    const foot = useContext(contextTheme)
   return (
     <footer className="footer">
 
       <div className="footer-top">
 
         <div className="footer-brand">
-          <h1>Zulfiqar Ali</h1>
+         <h1>{foot}</h1>
           <p>
             Build modern and responsive websites with React and Tailwind CSS.
           </p>

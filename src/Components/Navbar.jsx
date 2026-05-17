@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Navbar.css"
+import { contextTheme } from '../App';
 
 function Navbar() {
+    const data = useContext(contextTheme)
   return (
     <nav className="navbar">
 
       <div className="logo">
-        Zulfiqar Ali
+ <h1>{data}</h1>       
       </div>
 
       <ul className="nav-links">
@@ -19,6 +21,8 @@ function Navbar() {
       <button className="nav-btn">
         Login
       </button>
+
+     
 
     </nav>
   );
