@@ -1,13 +1,11 @@
-import React, { useContext } from 'react'
-import "./Main.css"
-import { contextTheme } from '../App';
-function Main() {
-const main = useContext(contextTheme)
+import React from 'react'
+import "./Body.css"
+function Body() {
 
 
   return (
     <main className="hero-section">
-<h1>{main}</h1>
+<h1>hiiiii</h1>
       <div className="content">
         <h1>Build Modern Websites With React</h1>
 
@@ -33,4 +31,4 @@ const main = useContext(contextTheme)
   );
 }
 
-export default Main;
+export default Body;

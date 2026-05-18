@@ -1,26 +1,18 @@
-import { createContext ,useState} from "react";
-import Footer from "./Components/Footer";
-import Main from "./Components/Main";
-import Navbar from "./Components/Navbar";
+import React from "react"
+import Navbar from "./Components/Navbar"
+import Footer from "./Components/Footer"
+import Body from './Components/Body'
 
-
-
-export const contextTheme = createContext()
 function App() {
-  const [theme , setTheme] = useState("Zulfiqar Ali")
+
+
   return (
- <>
-<contextTheme.Provider value = {theme}>
-<Navbar />
-<Main/>
-<Footer/>
-</contextTheme.Provider>
-
-
-  
-
- </>
-  );
+    <>
+     <Navbar />
+     <Body />
+     <Footer/>
+    </>
+  )
 }
 
-export default App;
+export default App

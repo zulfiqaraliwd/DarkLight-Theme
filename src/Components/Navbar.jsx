@@ -1,14 +1,13 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import "./Navbar.css"
-import { contextTheme } from '../App';
 
 function Navbar() {
-    const data = useContext(contextTheme)
+  
   return (
     <nav className="navbar">
 
       <div className="logo">
- <h1>{data}</h1>       
+ <h1>hiiii</h1>       
       </div>
 
       <ul className="nav-links">
