@@ -1,30 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Navbar.css"
+import { themeContext } from "./ThemeContext"
 
 function Navbar() {
-  
+
+  const { theme, changeTheme } = useContext(themeContext)
+
   return (
+
     <nav className="navbar">
 
-      <div className="logo">
- <h1>hiiii</h1>       
-      </div>
+      <h1>{theme}</h1>
 
-      <ul className="nav-links">
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Contact</li>
-      </ul>
-
-      <button className="nav-btn">
-        Login
+      <button onClick={changeTheme}>
+        Dark / Light
       </button>
 
-     
-
     </nav>
-  );
+
+  )
 }
 
-export default Navbar;
+export default Navbar

@@ -1,16 +1,26 @@
-import React from "react"
+import React, { useContext } from "react"
 import Navbar from "./Components/Navbar"
 import Footer from "./Components/Footer"
 import Body from './Components/Body'
+import ThemeContext from "./Components/ThemeContext"
+
 
 function App() {
-
+  const {theme,changeTheme} = useContext(themeContext)
+  const myStyle = {
+    backgroundColor : "red"
+  }
 
   return (
+    
     <>
-     <Navbar />
-     <Body />
-     <Footer/>
+ 
+<ThemeContext>
+      <Navbar />
+      <Body />
+      <Footer />
+</ThemeContext>
+   
     </>
   )
 }
