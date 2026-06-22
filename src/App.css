@@ -1,0 +1,27 @@
+.light {
+  background: #ffffff;
+  color: #111827;
+  min-height: 100vh;
+  transition: 0.4s;
+}
+
+.dark {
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
+  transition: 0.4s;
+}
+
+.dark .content p {
+  color: #cbd5e1;
+}
+
+.dark .learn-btn {
+  border-color: white;
+  color: white;
+}
+
+.dark .learn-btn:hover {
+  background: white;
+  color: black;
+}

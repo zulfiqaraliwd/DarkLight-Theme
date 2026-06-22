@@ -7,9 +7,6 @@ function Body() {
 
     <main className="hero-section">
 
-      <h1 className="name">
-        Zulfiqar Ali
-      </h1>
 
 
       <div className="content">
@@ -49,7 +46,6 @@ function Body() {
         />
 
       </div>
-
 
     </main>
 

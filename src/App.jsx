@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-
+import  "./App.css"
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Body from "./Components/Body";
@@ -10,7 +10,6 @@ import ThemeProvider, { themeContext } from "./Components/ThemeContext";
 function AppContent() {
 
   const { theme } = useContext(themeContext);
-
 
   const myStyle = {
     backgroundColor: theme === "light" ? "white" : "black",
