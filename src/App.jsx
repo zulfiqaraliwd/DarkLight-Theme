@@ -1,28 +1,52 @@
-import React, { useContext } from "react"
-import Navbar from "./Components/Navbar"
-import Footer from "./Components/Footer"
-import Body from './Components/Body'
-import ThemeContext from "./Components/ThemeContext"
+import React, { useContext } from "react";
+
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import Body from "./Components/Body";
+
+import ThemeProvider, { themeContext } from "./Components/ThemeContext";
+
+
+function AppContent() {
+
+  const { theme } = useContext(themeContext);
+
+
+  const myStyle = {
+    backgroundColor: theme === "light" ? "white" : "black",
+    color: theme === "dark" ? "white" : "black",
+    minHeight: "100vh",
+  };
+
+
+  return (
+    <div style={myStyle}>
+
+      <Navbar />
+
+      <Body />
+
+      <Footer />
+
+    </div>
+  );
+}
+
 
 
 function App() {
-  const {theme,changeTheme} = useContext(themeContext)
-  const myStyle = {
-    backgroundColor : "red"
-  }
 
   return (
-    
-    <>
- 
-<ThemeContext>
-      <Navbar />
-      <Body />
-      <Footer />
-</ThemeContext>
-   
-    </>
-  )
+
+    <ThemeProvider>
+
+      <AppContent />
+
+    </ThemeProvider>
+
+  );
+
 }
 
-export default App
+
+export default App;

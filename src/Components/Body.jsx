@@ -1,33 +1,58 @@
-import React from 'react'
-import "./Body.css"
+import React from "react";
+import "./Body.css";
+
 function Body() {
 
-
   return (
+
     <main className="hero-section">
-<h1>hiiiii</h1>
+
+      <h1 className="name">
+        Zulfiqar Ali
+      </h1>
+
+
       <div className="content">
-        <h1>Build Modern Websites With React</h1>
+
+        <h1>
+          Build Modern Websites With React
+        </h1>
+
 
         <p>
           Learn React, Tailwind CSS, APIs, and build responsive
           real-world projects step by step.
         </p>
 
+
         <div className="buttons">
-          <button className="start-btn">Get Started</button>
-          <button className="learn-btn">Learn More</button>
+
+          <button className="start-btn">
+            Get Started
+          </button>
+
+
+          <button className="learn-btn">
+            Learn More
+          </button>
+
         </div>
+
       </div>
 
+
       <div className="image-section">
+
         <img
           src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
           alt="Coding"
         />
+
       </div>
 
+
     </main>
+
   );
 }
 
