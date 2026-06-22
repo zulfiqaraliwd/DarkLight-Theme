@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-top">
 
         <div className="footer-brand">
-         <h1>hiiii</h1>
+        
           <p>
             Build modern and responsive websites with React and Tailwind CSS.
           </p>
@@ -28,7 +28,7 @@ function Footer() {
         <div className="footer-contact">
           <h3>Contact</h3>
 
-          <p>Email: zulfiqarali@gmail.com</p>
+          <p>Email: zulfiqaraliwd@gmail.com</p>
           <p>Phone: +92 3335253373</p>
         </div>
 
